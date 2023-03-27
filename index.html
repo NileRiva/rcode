@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nilestyle.css">
+    
+    <title>NileBot</title>
+
+</head>
+
+<body>
+
+    <div id="videoBox">
+      <h1>NileBot</h1>
+      <div class="parent">
+          <img class="image1" src="http://192.168.1.1:8080/?action=stream" />
+          <img class="image2" src="/nilebotassets/Red 43.png"/>
+          <! --http://192.168.1.1:8080/?action=stream -->
+        </div>
+    </div>
+
+    
+    <div class="slidecontainer">
+      <p>Servo 1:</p>
+      <input type="range" min="0" max="180" value="90" class="slider" id="s1slider">
+      <p>Angle: <span id="s1angle"></span></p>
+      <p>Servo 2:</p>
+      <input type="range" min="0" max="180" value="90" class="slider" id="s2slider">
+      <p>Angle: <span id="s2angle"></span></p>
+      <p>Servo 3:</p>
+      <input type="range" min="0" max="180" value="90" class="slider" id="s3slider">
+      <p>Angle: <span id="s3angle"></span></p>
+      <p>Servo 4:</p>
+      <input type="range" min="0" max="180" value="90" class="slider" id="s4slider">
+      <p>Angle: <span id="s4angle"></span></p>
+      <p>Servo 5:</p>
+      <input type="range" min="0" max="180" value="90" class="slider" id="s5slider">
+      <p>Angle: <span id="s5angle"></span></p>
+      <p>Servo 6:</p>
+      <input type="range" min="0" max="180" value="90" class="slider" id="s6slider">
+      <p>Angle: <span id="s6angle"></span></p>
+    
+    </div>
+
+    <script type="text/javascript" src="ws.js"></script>
+    <button onclick="handleOnClick()"> Click Me </button>
+    <div id="number">0</div>
+
+    <script type="text/javascript" src="ws.js"></script>
+</body>
+</html>
