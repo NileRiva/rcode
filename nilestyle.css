@@ -9,16 +9,24 @@ all {
 }
 
 body {
-  background-color: #060606;
+  background-color: #ffffff;
 }
  
 
 
-/* h1{
-    padding: 100px;
-} */
+h1{
+    font-family: Android;
+    font-size: 64px;
+    color: #48C3E8;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
 .slidecontainer {
     width: 100%;
+    font-family: Android;
+    color: #48C3E8;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
   }
   
   .slider {
@@ -41,16 +49,20 @@ body {
     appearance: none;
     width: 25px;
     height: 25px;
-    background: #aa0404;
+    background: #48C3E8;
     cursor: pointer;
   }
   
   .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    background: #aa0404;
+    background: #48C3E8;
     cursor: pointer;
   }
+
+#servolabels {
+font-family: Robot;
+}
 
   /*Video Overlay Attempt*/
 #videoBox {
@@ -94,3 +106,14 @@ body {
     width: 100%;
   }
 
+  @font-face {
+    font-family: Android;
+    src: url(nilebotassets/android_7.ttf);
+  }
+
+  @font-face {
+    font-family: Robot;
+    src: url(nilebotassets/pdark.ttf);
+  }
+
+  

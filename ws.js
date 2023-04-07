@@ -16,6 +16,14 @@ handleOnClick = () => {
     ws.send("hi")
 }
 
+function servoinstruction(servonum,angle){
+    return 'FF'+'01'+servonum.toString(16).padStart(2, '0').toUpperCase()+angle.toString(16).padStart(2, '0').toUpperCase()+'FF';
+}
+
+async function sleep(milli_seconds = 1000) {
+    return new Promise(done => setTimeout(() => done(), milli_seconds));
+    }
+
 for(let i=0; i<servos.length;i++)
 {
     slider[i] = document.getElementById(servos[i]);
@@ -24,8 +32,11 @@ for(let i=0; i<servos.length;i++)
 
     slider[i].oninput = function() {
     output[i].innerHTML = this.value;
-    ws.send(i);
-    ws.send(this.value);
+    let angle=parseInt(this.value);//HAd to convert to string
+    console.log(angle.toString(16).padStart(2, '0').toUpperCase());
+    console.log(servoinstruction(i+1,angle));
+    ws.send(servoinstruction(i+1,angle));
+    sleep(1000);
     }
 }
 

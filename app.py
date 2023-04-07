@@ -17,10 +17,19 @@ async def test(websocket: WebSocket):
     s.connect((HOST, PORT))
     try: 
         while True:
-            request = await websocket.receive_text()
+            request = await websocket.receive_text() ####await timeout????
             print(request)
             s.send(bytes.fromhex(request))
-            #data = s.recv(1024)
+            try:
+                data = s.recv(5)
+                if data[0] == 0xff and data[len(data) - 1] == 0xff:
+                    buf=[]
+                    for i in range(1, 4):
+                        buf.append(data[i])
+                    print(buf)
+            except Exception as e:
+                print('Socket Error:',e)
+            
     except WebSocketDisconnect:
         print("Closed")
         s.close()
