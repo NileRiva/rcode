@@ -11,40 +11,62 @@
 </head>
 
 <body>
+  <main>
+    <div class="left">
+      <div id="videoBox">
+        <h1>NILE BOT</h1>
+        <div class="parent">
+            <img class="image1" src="http://192.168.1.1:8080/?action=stream" />
+            <img class="image2" src="/nilebotassets/Blue 43.png"/>
+          </div>
+      </div>
+    </div>
 
-    <div id="videoBox">
-      <h1>NILE BOT</h1>
-      <div class="parent">
-          <img class="image1" src="http://192.168.1.1:8080/?action=stream" />
-          <img class="image2" src="/nilebotassets/Blue 43.png"/>
-          <! --http://192.168.1.1:8080/?action=stream -->
+    <div class="right">
+      <div class="slidecontainer">
+        <div class="slidelabel">
+          <p>Servo 1: <span id="s1angle"></span></p>
+          <input type="range" min="0" max="180" value="90" class="slider" id="s1slider">
+          <!-- <p>Angle: <span id="s1angle"></span></p> -->
         </div>
+
+        <div class="slidelabel">
+          <p>Servo 2: <span id="s2angle"></span></p>
+          <input type="range" min="0" max="180" value="90" class="slider" id="s2slider">
+          <!-- <p>Angle: <span id="s2angle"></span></p> -->
+        </div>
+
+        <div class="slidelabel">
+          <p>Servo 3: <span id="s3angle"></span></p>
+          <input type="range" min="0" max="180" value="90" class="slider" id="s3slider">
+          <!-- <p>Angle: <span id="s3angle"></span></p> -->
+        </div>
+
+        <div class="slidelabel">
+          <p>Servo 4: <span id="s4angle"></span></p>
+          <input type="range" min="0" max="180" value="90" class="slider" id="s4slider">
+          <!-- <p>Angle: <span id="s4angle"></span></p> -->
+        </div>
+
+        <div class="slidelabel">
+          <p>Servo 5: <span id="s5angle"></span></p>
+          <input type="range" min="0" max="180" value="90" class="slider" id="s5slider">
+          <!-- <p>Angle: <span id="s5angle"></span></p> -->
+        </div>
+
+        <div class="slidelabel">
+          <p>Servo 6: <span id="s6angle"></span></p>
+          <input type="range" min="0" max="180" value="90" class="slider" id="s6slider">
+          <!-- <p>Angle: <span id="s6angle"></span></p> -->
+        </div>
+      </div>
+
+      <div class="controls">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ab tempore temporibus, nulla non sint nemo ex obcaecati nostrum doloremque sunt reiciendis animi totam perferendis? Pariatur illo veniam, amet temporibus aut ipsum porro iure nesciunt nisi, magnam, aspernatur earum unde? Maxime adipisci commodi dolorum ea voluptatem recusandae atque, in quaerat tenetur dolore quisquam dignissimos dolorem excepturi consectetur minima exercitationem a cumque itaque esse necessitatibus! Minus facilis sapiente neque natus ea rem veritatis asperiores aspernatur, illo quisquam? Distinctio corrupti doloremque molestiae molestias iusto. Reprehenderit nihil impedit sed suscipit! Cupiditate eaque ad voluptas laudantium excepturi earum aspernatur adipisci alias similique odio! Sapiente dolor quis facere praesentium voluptatem exercitationem, quisquam deserunt perspiciatis. Quibusdam eveniet saepe excepturi dolores earum possimus facilis voluptas similique aspernatur at, tempora, accusamus iste modi quos optio inventore. Inventore quos, nemo quis pariatur modi quas nam architecto, quam eaque magnam consequuntur repellat! Illo eius assumenda eveniet ducimus sint maxime officia, ipsam neque nulla, iusto harum saepe quisquam necessitatibus numquam quibusdam praesentium reiciendis repudiandae! Quis harum ad et corrupti dicta nihil ea asperiores earum, pariatur quae ex est quisquam. Dolor similique dolores qui numquam accusantium labore minus ea et. Dolores, excepturi. Voluptatibus veniam saepe, repudiandae accusantium doloribus ad beatae quasi ex quaerat consectetur autem! Est in dolore voluptatem non explicabo dolores harum consectetur facere reiciendis deserunt odit adipisci eligendi natus, eos, a temporibus mollitia. Vel est fuga possimus accusamus veritatis amet voluptate. Officia, maxime! Quod soluta atque at est non minus rem doloremque quae perferendis! Consequuntur minima minus doloremque delectus itaque?</p>
+      </div>
     </div>
 
-    
-    <div class="slidecontainer">
-      <p>Servo 1:</p>
-      <input type="range" min="0" max="180" value="90" class="slider" id="s1slider">
-      <p>Angle: <span id="s1angle"></span></p>
-      <p>Servo 2:</p>
-      <input type="range" min="0" max="180" value="90" class="slider" id="s2slider">
-      <p>Angle: <span id="s2angle"></span></p>
-      <p>Servo 3:</p>
-      <input type="range" min="0" max="180" value="90" class="slider" id="s3slider">
-      <p>Angle: <span id="s3angle"></span></p>
-      <p>Servo 4:</p>
-      <input type="range" min="0" max="180" value="90" class="slider" id="s4slider">
-      <p>Angle: <span id="s4angle"></span></p>
-      <p>Servo 5:</p>
-      <input type="range" min="0" max="180" value="90" class="slider" id="s5slider">
-      <p>Angle: <span id="s5angle"></span></p>
-      <p>Servo 6:</p>
-      <input type="range" min="0" max="180" value="90" class="slider" id="s6slider">
-      <p>Angle: <span id="s6angle"></span></p>
-    
-    </div>
-
-
+  </main>
     <script type="text/javascript" src="ws.js"></script>
 </body>
 </html>
